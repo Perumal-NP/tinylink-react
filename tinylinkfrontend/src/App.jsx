@@ -285,7 +285,7 @@ const createLink = async (e) => {
           </section>
         </main>
 
-        <footer className="mt-6 text-center text-xs text-gray-500">TinyLink UI • Simple admin for testing and demos</footer>
+        <footer className="mt-6 text-center text-xs text-gray-500">TinyLink &copy; 2025</footer>
       </div>
     </div>
   );

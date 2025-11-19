@@ -18,7 +18,7 @@ const {
   PGPASSWORD,
   PGPORT,
   PGSSLMODE,
-  DATABASE_URL, // optional single URL
+  DATABASE_URL,
   PORT,
   BASE_URL // <-- user-provided base url (optional)
 } = process.env;
@@ -271,7 +271,7 @@ app.delete('/api/links/:code', async (req, res) => {
   } finally {
     client.release();
   }
-});
+})
 
 // Start server after testing DB connection
 testDBConnection().finally(() => {
