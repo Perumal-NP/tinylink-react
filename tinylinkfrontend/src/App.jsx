@@ -148,7 +148,7 @@ const createLink = async (e) => {
 
   const testRedirect = async (code) => {
     try {
-      const res = await fetch(`${API_BASE}/${code}`);
+      const res = await fetch(`${API_BASE}/${code}?test=1`);
       if (!res.ok) throw new Error(await res.text());
       const data = await res.json();
       setMessage({ type: 'info', text: `Redirect target: ${data.target}` });
